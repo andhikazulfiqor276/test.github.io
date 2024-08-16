@@ -1,0 +1,288 @@
+<!-- Sosro project inside -->
+<div class="editableContent">
+  <table data-target="clientBox" data-callback="buildClient()">
+    <tbody>
+      <tr class="noEdit title">
+        <td colspan="2">Content Company Experiences / Client</td>
+      </tr>
+      <tr data-target="judul" data-mime="text">
+        <td class="noEdit titleFunc">Judul</td>
+        <td class="showType" data-type="TEXT">Daikin Project</td>
+      </tr>
+      <tr data-target="txt" data-mime="html">
+        <td class="noEdit titleFunc">Text</td>
+        <td class="showType" data-type="HTML">
+          <table height="70" style="width: 926px;">
+            <tbody>
+              <tr>
+                <td style="width: 143.484px;">Project Name</td>
+                <td style="width: 766.516px;">Daikin Project</td>
+              </tr>
+              <tr>
+                <td style="width: 143.484px;"></td>
+                <td style="width: 766.516px;"></td>
+              </tr>
+              <tr>
+                <td style="width: 143.484px;">Location</td>
+                <td style="width: 766.516px;">GIIC. Cikarang Pusat, Kabupaten Bekasi, Jawa Barat</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+      <tr data-target="contactList" data-mime="list">
+        <td class="noEdit titleFunc">Client Logo</td>
+        <td class="showType" data-type="">
+          <p class="infoPengisian">* Klik ROW yang sudah ada, lalu pilih <strong>Insert ROW before/after</strong> untuk
+            menambah data.<br>* Data (yang tampil di website) diurutkan berdasarkan kolom teratas dari table.</p>
+          <table data-column="icon:img">
+            <tbody>
+              <tr class="noEdit title sub">
+                <td class="noEdit showType" data-type="IMGSOURCE">Project Image</td>
+              </tr>
+              <tr data-target="list">
+                <td><img src="https://www.reakindo.co.id/image-upload/Daikin_hal_depan2.jpg"
+                    width="500" height="500"></td>
+              </tr>
+              <tr data-target="list">
+                <td><img src="https://www.reakindo.co.id/image-upload/daikin_new1.jpg" width="500"
+                    height="500"></td>
+              </tr>
+              <tr data-target="list">
+                <td><img src="https://www.reakindo.co.id/image-upload/daikin_new2.jpg"
+                    width="500" height="500"></td>
+              </tr>
+              <tr data-target="list">
+                <td><img src="https://www.reakindo.co.id/image-upload/daikin_new3.jpg"></td>
+              </tr>
+              <tr data-target="list">
+                <td><img src="https://www.reakindo.co.id/image-upload/daikin_new4.jpg"
+                    width="500" height="500"></td>
+              </tr>
+              <tr data-target="list">
+                <td><img src="https://www.reakindo.co.id/image-upload/daikin_new5.jpg"
+                    width="500" height="500"></td>
+              </tr>
+              <tr data-target="list">
+                <td><img src="https://www.reakindo.co.id/image-upload/daikin_new6.jpg"
+                    width="500" height="500"></td>
+              </tr>
+              <tr data-target="list">
+                <td><img src="https://www.reakindo.co.id/image-upload/daikin_new7.jpg" width="500"
+                    height="500"></td>
+              </tr>
+              <tr data-target="list">
+                <td><img src="https://www.reakindo.co.id/image-upload/daikin_new8.jpg" width="500"
+                    height="500"></td>
+              </tr>
+              <tr data-target="list">
+                <td><img
+                    src="https://www.reakindo.co.id/image-upload/daikin_new9.jpg"
+                    width="500" height="500"></td>
+              </tr>
+              <tr data-target="list">
+                <td><img
+                    src="https://www.reakindo.co.id/image-upload/daikin_new10.jpg"
+                    width="500" height="500"></td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<style>
+  <!--
+  .accordion {
+    margin-bottom: 10px;
+
+    .accordion-btn {
+      position: relative;
+      background-color: white;
+      background-image: linear-gradient(122deg, white, white);
+      border: none;
+      padding: 15px 20px;
+      text-align: left;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+      list-style-image: none;
+
+      &::-webkit-details-marker {
+        background: none;
+        color: transparent;
+      }
+
+      &::after {
+        content: "›";
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        font-size: 35px;
+        font-family: monospace;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        border-radius: 50%;
+        color: #000000;
+        border: 2px solid #000000;
+        transform: translate(0%, -50%) rotate(0deg);
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding-bottom: 4px;
+        padding-left: 2px;
+        justify-content: center;
+        font-weight: normal;
+        transition: all .3s ease;
+      }
+    }
+
+    .accordion-content {
+      background-color: #ffffff;
+      box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+
+      >* {
+        padding: 10px 20px;
+      }
+    }
+
+    &[open] {
+      .accordion-btn::after {
+        transform: translate(0%, -50%) rotate(90deg);
+      }
+
+      summary~* {
+        overflow: hidden;
+        animation: heightUp 1s ease-in-out;
+      }
+    }
+  }
+
+  @keyframes heightUp {
+    0% {
+      max-height: 0;
+    }
+
+    100% {
+      max-height: 2000px;
+    }
+  }
+
+
+  body#tinymce .setFullBox {
+    display: none
+  }
+
+  .editableContent>table {
+    min-width: 100%
+  }
+
+  .editableContent>table td {
+    vertical-align: top
+  }
+
+  .editableContent>p,
+  .editableContent p.infoPengisian {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif
+  }
+
+  .editableContent .title {
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(17, 30, 108);
+    color: aliceblue
+  }
+
+  .editableContent .title.sub {
+    background-color: rgba(1, 0, 128, .5)
+  }
+
+  .editableContent .noEdit:not(.title):not(.sub) {
+    pointer-events: none;
+    width: 15%;
+    vertical-align: top
+  }
+
+  .editableContent .titleFunc {
+    background-color: rgba(1, 0, 128, .9);
+    ;
+    color: aliceblue
+  }
+
+  .showType {
+    position: relative
+  }
+
+  .showType::after {
+    content: attr(data-type);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 235, 205, .7);
+    font-size: 10px;
+    padding: 2px;
+    font-style: italic
+  }
+
+  .editableContent>table img {
+    max-height: 150px;
+    max-width: 150px;
+    object-fit: cover;
+    border: 3px dashed #333
+  }
+
+  .noEdit.showType::after {
+    background-color: rgba(54, 15, 115, .5);
+    font-size: 8px
+  }
+
+  body#tinymce .mauEdit {
+    display: block !important;
+    text-align: center
+  }
+
+  body#tinymce .mauEdit button {
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+    border: 0;
+    font-weight: 600;
+    margin: 30px 0
+  }
+  -->
+</style>
+<div class="setFullBox clientBox">
+  <div class="setBox">
+    <div>
+      <h2 class="anim_dur2000 animate_delay200 animate__delay_1x" data-aos="animate__animated animate__fadeInUp">
+        {{judul}}</h2>
+      <div class="txt anim_dur2000 animate_delay200 animate__delay_2x" data-aos="animate__animated animate__fadeInUp">
+        {{txt}}</div>
+      <div class="txt anim_dur2000 animate_delay200 animate__delay_3x" data-aos="animate__animated animate__fadeInUp">
+        {{txtclient}}</div>
+    </div>
+    <div class="clSlide">
+      <div class="anim_dur2000 animate_delay200 animate__delay_2x" data-aos="animate__animated animate__fadeInUp">
+        <div class="swiper slideClient">
+          <div class="swiper-wrapper">{% set loopx = 1 %} {% set maxView = 1 %} {% for it in contactList %} {% if loopx
+            == 1 %}
+            <div class="swiper-slide">
+              <div class="groupLogo">{% endif %}
+                <div><img ::lazy::src="{{it.icon}}"></div>
+                {% set loopx = loopx + 1 %} {% if loopx == maxView + 1 %}
+              </div>
+            </div>
+            {% set loopx = 1 %} {% endif %} {% if loop.last %}
+          </div>
+        </div>
+        {% endif %} {% endfor %}
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</div>
